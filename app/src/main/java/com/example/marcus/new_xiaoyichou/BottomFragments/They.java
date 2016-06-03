@@ -4,11 +4,14 @@ import android.os.Bundle;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.marcus.new_xiaoyichou.Adapters.MyRecyclerAdapter;
 import com.example.marcus.new_xiaoyichou.R;
 
 import java.util.ArrayList;
@@ -21,16 +24,27 @@ import cn.bingoogolapple.bgabanner.BGABanner;
  */
 public class They extends Fragment {
     private View view;
+    private String[] datas = {"asdfsdf","asdfsdfsdf","sdfsdfsdf","s2fsfcvzzxcxv"};
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.they,null);
-        initView();
+        initAutoPlayImages();
+        initRecyclerView();
         return view;
     }
 
-    private void initView() {
+    private void initRecyclerView() {
+        RecyclerView list = (RecyclerView) view.findViewById(R.id.recycler_list);
+        LinearLayoutManager manager = new LinearLayoutManager(getActivity());
+        manager.setOrientation(LinearLayoutManager.VERTICAL);
+        list.setLayoutManager(manager);
+        list.setHasFixedSize(true);
+        list.setAdapter(new MyRecyclerAdapter(datas));
+    }
+
+    private void initAutoPlayImages() {
         BGABanner autoPlayImages = (BGABanner) view.findViewById(R.id.auto_play_image);
         // 用Java代码方式设置切换动画
         autoPlayImages.setTransitionEffect(BGABanner.TransitionEffect.Depth);
@@ -59,5 +73,5 @@ public class They extends Fragment {
             this.getView().setVisibility(menuVisibile ? View.VISIBLE : View.GONE);
         }
     }
-
 }
+
