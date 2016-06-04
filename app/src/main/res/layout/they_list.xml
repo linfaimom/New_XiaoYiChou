@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="180dp">
+    android:layout_height="155dp">
 
     <ImageView
         android:id="@+id/list_image"
@@ -11,7 +11,7 @@
         android:scaleType="fitXY"
         android:layout_width="0dp"
         android:layout_weight="3"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
 
     <RelativeLayout
         android:layout_marginLeft="6dp"
@@ -22,16 +22,17 @@
         <TextView
             android:id="@+id/top"
             tools:text="By 许静"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:textSize="16sp"
             android:layout_marginTop="14dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/under_top"
+            android:layout_marginTop="14dp"
             tools:text="守护17棵古茶树"
-            android:textSize="26sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_below="@id/top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -39,11 +40,24 @@
         <TextView
             android:id="@+id/bottom"
             tools:text="正在进行    农业"
-            android:textSize="26sp"
+            android:textSize="16sp"
             android:layout_marginBottom="14dp"
             android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/like"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
 
     </RelativeLayout>
 

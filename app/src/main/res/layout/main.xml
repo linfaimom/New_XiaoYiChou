@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <FrameLayout
+        android:background="@color/color_white"
         android:id="@+id/fragment_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -13,14 +14,14 @@
     </FrameLayout>
 
     <RelativeLayout
+        android:background="@color/color_f5f5f5"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="34dp">
 
         <Button
             android:id="@+id/they"
             android:background="@null"
-            android:text="他们"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:drawableTop="@drawable/they_change"
             android:layout_width="wrap_content"
@@ -30,7 +31,6 @@
             android:id="@+id/discover"
             android:background="@null"
             android:drawableTop="@drawable/discover_change"
-            android:text="发现"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
@@ -40,7 +40,6 @@
             android:id="@+id/me"
             android:background="@null"
             android:drawableTop="@drawable/me_change"
-            android:text="我"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"

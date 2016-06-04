@@ -12,6 +12,8 @@ import com.example.marcus.new_xiaoyichou.R;
 /**
  * Created by marcus on 16/6/2.
  */
+
+//TODO should complete this fragment today
 public class Me extends Fragment {
     private View view;
 

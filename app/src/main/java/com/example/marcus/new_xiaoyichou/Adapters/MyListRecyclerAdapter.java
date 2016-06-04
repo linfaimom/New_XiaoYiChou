@@ -12,13 +12,13 @@ import com.example.marcus.new_xiaoyichou.R;
 /**
  * Created by marcus on 16-6-4.
  */
-public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder> {
+public class MyListRecyclerAdapter extends RecyclerView.Adapter<MyListRecyclerAdapter.MyViewHolder> {
     private String[] top;
     private String[] underTop;
     private String[] bottom;
     private int[] images;
 
-    public MyRecyclerAdapter(int[] images,String[] top,String[] underTop, String[] bottom) {
+    public MyListRecyclerAdapter(int[] images, String[] top, String[] underTop, String[] bottom) {
         this.images = images;
         this.top = top;
         this.underTop = underTop;
