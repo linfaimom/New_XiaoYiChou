@@ -21,7 +21,6 @@ public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.splash);
         BGABanner banner = (BGABanner)findViewById(R.id.banner_splash_pager);
         // 用Java代码方式设置切换动画

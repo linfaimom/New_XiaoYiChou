@@ -13,6 +13,7 @@ import android.widget.ImageView;
 
 import com.example.marcus.new_xiaoyichou.Adapters.MyRecyclerAdapter;
 import com.example.marcus.new_xiaoyichou.R;
+import com.example.marcus.new_xiaoyichou.Solutions.VerticalSpaceItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +25,7 @@ import cn.bingoogolapple.bgabanner.BGABanner;
  */
 public class They extends Fragment {
     private View view;
-    private String[] datas = {"asdfsdf","asdfsdfsdf","sdfsdfsdf","s2fsfcvzzxcxv"};
+    private static final int VERTICAL_ITEM_SPACE = 10;
 
     @Nullable
     @Override
@@ -41,7 +42,14 @@ public class They extends Fragment {
         manager.setOrientation(LinearLayoutManager.VERTICAL);
         list.setLayoutManager(manager);
         list.setHasFixedSize(true);
-        list.setAdapter(new MyRecyclerAdapter(datas));
+        RecyclerView.ItemDecoration decoration = new VerticalSpaceItemDecoration(VERTICAL_ITEM_SPACE);
+        list.addItemDecoration(decoration);
+        list.setAdapter(new MyRecyclerAdapter(
+                new int[]{R.drawable.item1,R.drawable.item2},
+                new String[]{"By 许静","By 苏素"},
+                new String[]{"守护17棵古茶树","吉他女神爱开课"},
+                new String[]{"正在进行  农业","已成功     定制"}
+        ));
     }
 
     private void initAutoPlayImages() {
