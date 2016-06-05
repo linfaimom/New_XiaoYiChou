@@ -108,7 +108,7 @@
         <Button
             android:id="@+id/login"
             android:text="登 录"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#4494d0"
             android:textSize="36sp"
             android:background="@drawable/button_bg"
             android:layout_centerHorizontal="true"
