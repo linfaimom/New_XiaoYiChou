@@ -1,5 +1,6 @@
 package com.example.marcus.new_xiaoyichou;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,7 +9,6 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 
 import com.example.marcus.new_xiaoyichou.BottomFragments.Discover;
 import com.example.marcus.new_xiaoyichou.BottomFragments.Me;
@@ -100,10 +100,13 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 theyTab.setSelected(false);
                 break;
             case R.id.me :
-                index = 2;
+                //index = 2;
                 meTab.setSelected(true);
                 theyTab.setSelected(false);
                 discoverTab.setSelected(false);
+                Intent intent = new Intent(MainActivity.this,Login.class);
+                startActivity(intent);
+                meTab.setSelected(false);
                 break;
         }
 
