@@ -9,15 +9,8 @@
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="50dp">
-
-        <ImageButton
-            android:layout_centerVertical="true"
-            android:id="@+id/back"
-            android:src="@drawable/back"
-            android:layout_marginLeft="12dp"
-            style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:layout_width="38dp"
-            android:layout_height="20dp" />
+        
+        <include layout="@layout/top_title"/>
 
         <TextView
             android:layout_centerHorizontal="true"
@@ -26,18 +19,6 @@
             android:textStyle="bold"
             android:textColor="@color/color_white"
             android:layout_centerInParent="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/forward"
-            android:text="下一步"
-            style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/color_white"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -62,7 +43,7 @@
                     android:textSize="14sp"
                     android:textStyle="bold"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="18dp"
+                    android:layout_marginLeft="@dimen/margin_18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView" />
@@ -99,34 +80,36 @@
 
             </RelativeLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
                     android:text="3天"
                     android:textSize="10sp"
-                    android:layout_marginLeft="18dp"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_centerVertical="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <SeekBar
                     android:id="@+id/seek"
+                    android:layout_centerInParent="true"
                     android:max="27"
                     android:progress="1"
-                    android:layout_width="0dp"
-                    android:layout_weight="6"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content" />
 
                 <TextView
                     android:text="30天"
                     android:textSize="10sp"
-                    android:layout_marginRight="18dp"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -141,11 +124,11 @@
             android:background="@drawable/table_bg"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
-            android:layout_height="34dp">
+            android:layout_height="40dp">
 
             <TextView
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="@dimen/margin_18"
                 android:text="需要支持者收件地址"
                 android:textStyle="bold"
                 android:textSize="14sp"
@@ -153,6 +136,7 @@
                 android:layout_height="wrap_content" />
 
             <com.nightonke.jellytogglebutton.JellyToggleButton
+                android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -167,11 +151,11 @@
         <RelativeLayout
             android:background="@drawable/table_bg"
             android:layout_width="match_parent"
-            android:layout_height="34dp">
+            android:layout_height="40dp">
 
             <TextView
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="@dimen/margin_18"
                 android:text="设为隐私项目"
                 android:textStyle="bold"
                 android:textSize="14sp"
@@ -187,6 +171,7 @@
                 android:layout_height="wrap_content" />
 
             <com.nightonke.jellytogglebutton.JellyToggleButton
+                android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -201,12 +186,12 @@
         <RelativeLayout
             android:background="@drawable/table_bg"
             android:layout_width="match_parent"
-            android:layout_height="34dp">
+            android:layout_height="40dp">
 
             <TextView
                 android:layout_centerVertical="true"
                 android:text="项目标签"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="@dimen/margin_18"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
@@ -232,7 +217,7 @@
         <EditText
             android:layout_centerVertical="true"
             android:background="@null"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="@dimen/margin_18"
             android:hint="你的梦想是什么?（标题）"
             android:textSize="12sp"
             android:layout_width="match_parent"
@@ -248,7 +233,7 @@
         <EditText
             android:background="@null"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="@dimen/margin_18"
             android:hint="详细描述下你的梦想与故事"
             android:textSize="12dp"
             android:layout_width="match_parent"
@@ -258,7 +243,7 @@
 
     <RelativeLayout
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="18dp"
+        android:layout_marginLeft="@dimen/margin_18"
         android:background="@drawable/upload_bg"
         android:layout_width="100dp"
         android:layout_height="100dp">

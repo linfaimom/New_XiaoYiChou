@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
@@ -16,6 +17,7 @@ import com.example.marcus.new_xiaoyichou.R;
  */
 public class Page1 extends Activity {
     private ImageButton back;
+    private Button forward;
     private SeekBar seekBar;
     private EditText days;
 
@@ -48,6 +50,14 @@ public class Page1 extends Activity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
+            }
+        });
+        forward = (Button) findViewById(R.id.forward);
+        forward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Page1.this,Page2.class);
+                startActivity(intent);
             }
         });
     }

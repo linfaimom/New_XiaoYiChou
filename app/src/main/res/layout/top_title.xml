@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:layout_centerVertical="true"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:layout_marginLeft="12dp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="38dp"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/forward"
+        android:text="下一步"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
