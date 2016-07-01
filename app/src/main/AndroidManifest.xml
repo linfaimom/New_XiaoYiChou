@@ -24,6 +24,14 @@
 
         <activity android:name=".Login"/>
 
+        <activity android:name=".Item"/>
+
+        <activity android:name=".User"/>
+
+        <activity android:name=".StartProjects.Page1"/>
+        <activity android:name=".StartProjects.Page2"/>
+        <activity android:name=".StartProjects.Page3"/>
+
     </application>
 
 </manifest>

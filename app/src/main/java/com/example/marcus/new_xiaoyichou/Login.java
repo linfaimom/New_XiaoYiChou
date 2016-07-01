@@ -22,7 +22,7 @@ public class Login extends Activity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this,MainActivity.class);
+                Intent intent = new Intent(Login.this,User.class);
                 startActivity(intent);
                 finish();
             }

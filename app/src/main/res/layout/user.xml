@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@color/color_f5f5f5"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/scene2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/godxiang"
+                android:layout_centerInParent="true"
+                android:layout_width="64dp"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:text="God翔"
+                android:textSize="20sp"
+                android:textColor="#cccccc"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/setting"
+                android:layout_marginTop="8dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp" />
+
+            <ImageButton
+                android:id="@+id/back"
+                android:src="@drawable/back"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="38dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/start_project"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="0"
+                    android:textColor="#459c2d"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="发起的项目"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="1"
+                    android:textColor="#459c2d"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="支持的项目"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="0"
+                    android:textColor="#459c2d"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="关注的项目"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:background="@color/color_white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/listitems_2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <ListView
+            android:background="@color/color_white"
+            android:id="@+id/listitems_3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

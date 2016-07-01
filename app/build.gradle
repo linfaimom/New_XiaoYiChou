@@ -28,4 +28,5 @@ dependencies {
     compile 'cn.bingoogolapple:bga-banner:2.0.3'
     compile 'com.android.support:recyclerview-v7:23.4.0'
     compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.nightonke:jellytogglebutton:1.0.2'
 }
